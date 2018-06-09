@@ -24,13 +24,11 @@ const NavBar = () => (
       <Link to="/"> The Mamash Guide </Link>
       </Navbar.Brand>
     </Navbar.Header>
-    <Navbar.Collapse>
       <Nav>
         <NavBarItem link='/justicetable' name='Justice Table' eventKey={1}/>
         <NavBarItem link='/add' name='Serve Justice' eventKey={2}/>
         <NavBarItem link='/calander' name='Calander' eventKey={3}/>
       </Nav>
-    </Navbar.Collapse>
   </Navbar>
 )
 
