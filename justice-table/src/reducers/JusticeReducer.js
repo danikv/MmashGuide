@@ -12,6 +12,10 @@ export const justiceReducer = (state = [], action) => {
                 }
                 return justice
             })
+        case 'DELETE_JUSTICE':
+            return state.filter(justice => {
+                return !(justice.name === action.name)
+            })
         default:
             return state
     }

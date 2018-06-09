@@ -17,3 +17,10 @@ export const editJustice = ({name, hours}) => {
         }
     }
 }
+
+export const deleteJustice = ({name}) => {
+    return {
+        type: 'DELETE_JUSTICE',
+            name : name
+    }
+}
